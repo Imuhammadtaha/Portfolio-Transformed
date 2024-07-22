@@ -8,22 +8,22 @@ const ProjectSection = () => {
     {
       img: "/images/pr-1.webp",
       title: "Project 1",
-      description: "This is an amazing project about...",
+      description: "ShopNest a beautiful E-commerece store",
     },
     {
       img: "/images/st.webp",
       title: "Project 2",
-      description: "This project focuses on...",
+      description: "Live In Stock my semester project",
     },
     {
       img: "/images/web-aws.webp",
       title: "Project 3",
-      description: "A wonderful project that...",
+      description: "Aws Touch Frontend Project",
     },
     {
       img: "/images/pr-5.jpeg",
       title: "Project 4",
-      description: "This project explores...",
+      description: "Landing Page of a Luggage Company",
     },
   ];
 
