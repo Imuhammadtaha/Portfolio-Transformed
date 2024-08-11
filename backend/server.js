@@ -23,11 +23,17 @@ app.use("/api/v1/portfolio-f", contactRoutes);
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-// linking static files
-app.use(express.static(join(__dirname, "../frontend/build")));
+app.use(express.static(join(__dirname, "./build")));
 
 app.get("*", (req, res) => {
-  res.sendFile(join(__dirname, "../frontend/build/index.html"));
+  res.sendFile(join(__dirname, "./build/index.html"));
+});
+
+app.get("/", (req, res) => {
+  res.send({
+    succcess: true,
+    message: "Server Running Hurray",
+  });
 });
 
 // port
