@@ -21,7 +21,7 @@ const ContactSection = () => {
       formData.append("message", message);
 
       const res = await axios.post(
-        `http://localhost:8080/api/v1/portfolio-f/sendEmail`,
+        `https://portfolio-transformed.vercel.app/api/v1/portfolio-f/sendEmail`,
         formData,
         { headers: { "Content-Type": "application/json" } }
       );
@@ -115,7 +115,7 @@ const ContactSection = () => {
                 <h3 className="text-xl font-bold pop mb-4">Follow Us</h3>
                 <div className="flex justify-center space-x-4">
                   <a
-                    href="https://github.com/Imuhammadtaha"
+                    href="https://www.linkedin.com/in/m-taha-7a5748284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     rel="noreferrer"
                     target="_blank"
                     className="flex items-center justify-center w-12 h-12 bg-white rounded-full"
