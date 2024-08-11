@@ -21,7 +21,7 @@ const ContactSection = () => {
       formData.append("message", message);
 
       const res = await axios.post(
-        `http://localhost:8080/api/v1/portfolio-f/sendEmail`,
+        `https://portfolio-transformed.vercel.app/api/v1/portfolio-f/sendEmail`,
         formData,
         { headers: { "Content-Type": "application/json" } }
       );
